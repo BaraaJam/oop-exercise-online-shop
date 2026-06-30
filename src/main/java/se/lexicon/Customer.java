@@ -1,8 +1,8 @@
 package se.lexicon;
 
 public class Customer {
-    private String name;
-    private String email;
+    private final String name;
+    private final String email;
 
     public Customer(String name, String email){
         if (name == null || name.trim().isBlank())
@@ -19,6 +19,6 @@ public class Customer {
     public String getEmail() { return email; }
 
     public void printInfo(){
-        System.out.printf("Customer: %s | Email: %s%n", this.name, this.email);
+        System.out.printf("Customer: %s | Email: %s%n", getName(), getEmail());
     }
 }

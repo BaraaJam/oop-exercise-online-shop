@@ -1,7 +1,7 @@
 package se.lexicon;
 
 public class Product {
-    private String name;
+    private final String name;
     private double price;
 
     public Product (String name, double price){
@@ -34,6 +34,6 @@ public class Product {
     }
 
     public void printInfo(){
-        System.out.printf("Product: %s | Price: $%.2f%n", this.name, this.price);
+        System.out.printf("Product: %s | Price: %.2f SEK%n", this.name, this.price);
     }
 }
